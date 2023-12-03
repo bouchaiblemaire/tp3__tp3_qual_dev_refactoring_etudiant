@@ -26,7 +26,11 @@ public class ArbreBinaireBase<T> {
 
 
     /* Constructeurs */
-    public ArbreBinaireBase(T val) { this.racine = new Noeud<T>(val); }
+    public ArbreBinaireBase(T val) {
+        this.racine = new Noeud<T>(val);
+        this.sousArbreFilsG = null;
+        this.sousArbreFilsD = null;
+    }
 
     public ArbreBinaireBase(T val, ArbreBinaireBase<T> fg, ArbreBinaireBase<T> fd) {
         this.racine = new Noeud<T>(val);
